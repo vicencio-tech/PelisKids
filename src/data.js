@@ -86,7 +86,7 @@ document.getElementById('allDisney').addEventListener('click',showDescriptionStu
 //detectando select para filtrar por genero 
 const selectDisney = document.getElementById('genreSearchDisney');
 selectDisney.addEventListener("change", function() { 
-    const genreDisney = document.getElementById("genreSearchDisney").value;
+    const genreDisney = document.getElementById("genreSearchDisney").value; //se rescata el valor del genero seleccionado
     showDisneyMovies(genreDisney);
 });
 
@@ -110,9 +110,9 @@ function showDisneyMovies (genreDisney) {
         for (let i = 0; i<bestDisneyMovies.length; i++) {    
             fetch('http://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
-            .then(data => { //todos los elementos caen en data
-            finalData = (data.Genre.includes(genreDisney)?data:'');
-            if(finalData !== ''){
+            .then(data => { // todos los elementos caen en data
+            finalData = (data.Genre.includes(genreDisney)?data:'');// si dentro de la data.genero esta incluido el genero seleccionado se ejecutara si se cumple y si no quedara vacio
+            if(finalData !== ''){ //si final data es distinto de vacio se muestra el resultado, es decir, que los resultados vacios no se muestran
                 disneyBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="card" style="width: 18rem;">
                 <a href="index.html"><img src="${finalData.Poster}" id="img2" class="img-fluid" alt="poster"></a>
