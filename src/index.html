@@ -12,23 +12,147 @@
 <body>
 <div id="firstPage">
     <h3>Catálogo de peliculas para disfrutar juntos a tus hijos!</h3>
-    <button id="allDisney">Mostrar Peliculas</button>
 
+    <button id="allDisney">Disney</button>
+    <button id="allDreamworks">Dreamworks</button>
+    <button id="allPixar">Pixar</button>
+    <button id="allGhibli">Ghibli</button>
 </div>
 
 <div id="secondPage">
-    <section id="showMovies">
-
+    <div>
+        <img src="logo.png">
+    </div>
+    <div id='descriptionStudioDisney' style="display:none;">
+        <h1>Studio Disney</h1>
+        <p>The Walt Disney Studios es un estudio de cine estadounidense, es una de las cuatro divisiones comerciales de The Walt Disney 
+            Company. El estudio, es uno de los más importantes del mundo ya que es considerado el número uno de los "Cinco Grandes" y es 
+            mejor conocido por sus divisiones cinematográficas multifacéticas, tiene su sede en el estudio homónimo de The Walt Disney Studios 
+            en Burbank, California. Fundado en 1923, es el cuarto más antiguo entre los principales estudios.</p>
+    </div>
+    <select id="genreSearchDisney">
+        <option value="">Filtrar por Género</option>
+        <option value="Action">Acción</option>
+        <option value="Animation">Animación</option>
+        <option value="Adventure">Aventura</option>
+        <option value="Sci-fi">Ciencia Ficción</option>
+        <option value="Comedy">Comedia</option>
+        <option value="Sports">Deportes</option>
+        <option value="Family">Familiar</option>
+        <option value="Fantasy">Fantasía</option>
+        <option value="Mystery">Misterio</option>
+        <option value="Musical">Musical</option>
+        <option value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchDisney">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G</option>
+            <option value="PG">PG</option>
+            <option value="PG 13">PG 13</option>
+    </select>
+    <section id="showDisney" class="sectionStyles">
     </section>
 </div>
 
 <div id="thirdPage">
-    <section id="infoMovie">
-
+        <div>
+                <img src="logo.png">
+            </div>
+            <div id='descriptionStudioDreamwork' style="display:none;">
+                <h1>Studio Dreamworks</h1>
+                <p>DreamWorks es un estudio de cine que produce y distribuye películas, así como videojuegos y programas de televisión, 
+                   fundado el 12 de octubre de 1994, poco tiempo después de que Jeffrey Katzenberg renunciara a The Walt Disney Company. En 2016 
+                   DreamWorks fue comprada por Comcast,la compañía de telecomunicaciones dueña de NBC Universal. Esta compra fue lo suficiente para mejorar
+                   el estudio. Hoy está entre las 8 grandes de Hollywood </p>
+            </div>
+            <select id="genreSearchDreamworks">
+                    <option value="">Filtrar por Género</option>
+                    <option value="Action">Acción</option>
+                    <option value="Animation">Animación</option>
+                    <option value="Adventure">Aventura</option>
+                    <option value="Sci-fi">Ciencia Ficción</option>
+                    <option value="Comedy">Comedia</option>
+                    <option value="Sports">Deportes</option>
+                    <option value="Family">Familiar</option>
+                    <option value="Fantasy">Fantasía</option>
+                    <option value="Mystery">Misterio</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Romance">Romance</option>
+            </select>
+            <select id="ratedSearchDreamworks">
+                    <option value="">Filtrar por Clasificación</option>
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG 13">PG 13</option>
+            </select>
+        </div>
+    <section id="showDreamworks" class="sectionStyles">
     </section>
-
 </div>
 
+<div id="fourthPage">
+        <div>
+                <img src="logo.png">
+            </div>
+            <div id='descriptionStudioPixar' style="display:none;">
+                <h1>Studio Pixar</h1>
+                <p>Pixar.........</p>
+            </div>
+            <select id="genreSearchPixar">
+                    <option value="">Filtrar por Género</option>
+                    <option value="Action">Acción</option>
+                    <option value="Animation">Animación</option>
+                    <option value="Adventure">Aventura</option>
+                    <option value="Sci-fi">Ciencia Ficción</option>
+                    <option value="Comedy">Comedia</option>
+                    <option value="Sports">Deportes</option>
+                    <option value="Family">Familiar</option>
+                    <option value="Fantasy">Fantasía</option>
+                    <option value="Mystery">Misterio</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Romance">Romance</option>
+            </select>
+            <select id="ratedSearchPixar">
+                    <option value="">Filtrar por Clasificación</option>
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG 13">PG 13</option>
+            </select>
+    <section id="showPixar" class="sectionStyles">
+    </section>
+</div>
+
+<div id="fifthPage">
+        <div>
+                <img src="logo.png">
+            </div>
+            <div id='descriptionStudioGhibli' style="display:none;">
+                <h1>Studio Ghibli</h1>
+                <p>Ghibli.........</p>
+            </div>
+            <select id='genreSearchGhibli'>
+                    <option value="">Filtrar por Género</option>
+                    <option value="Action">Acción</option>
+                    <option value="Animation">Animación</option>
+                    <option value="Adventure">Aventura</option>
+                    <option value="Sci-fi">Ciencia Ficción</option>
+                    <option value="Comedy">Comedia</option>
+                    <option value="Sports">Deportes</option>
+                    <option value="Family">Familiar</option>
+                    <option value="Fantasy">Fantasía</option>
+                    <option value="Mystery">Misterio</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Romance">Romance</option>
+            </select>
+            <select id="ratedSearchGhibli">
+                    <option value="">Filtrar por Clasificación</option>
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG13">PG13</option>
+            </select>
+    <section id="showGhibli" class="sectionStyles">
+    </section>
+</div>
 
 
  <script src="data.js"></script>
